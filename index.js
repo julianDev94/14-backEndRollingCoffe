@@ -7,7 +7,7 @@ import path from 'path';
 import productosRouter from './src/routes/productos.routes.js';
 import './src/database/database.js'
 
-console.log("Hola mundo v1");
+// console.log("Hola mundo v1");
 
 //1- configurar un puerto
 // puedo compilar el index.js usando node --watch index.js en forma experimental
