@@ -5,6 +5,7 @@ import morgan from 'morgan';
 import {fileURLToPath} from 'url';
 import path from 'path';
 import productosRouter from './src/routes/productos.routes.js';
+import './src/database/database.js'
 
 console.log("Hola mundo v1");
 
