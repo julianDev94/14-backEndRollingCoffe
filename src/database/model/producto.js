@@ -28,7 +28,7 @@ const productoSchema = new Schema({
   categoria: {
     type: String,
     required: true,
-    enum: ["Infusiones", "Batidos", "Dulce", "Salado"],
+    enum: ["Infusiones", "Batidos", "Dulces", "Salado"],
   },
   descripcionAmplia: {
     type: String,
