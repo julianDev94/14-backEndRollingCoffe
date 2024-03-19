@@ -35,3 +35,7 @@ export const crearProducto = async (req, res) => {
     });
   }
 };
+
+export const obtenerProductoID = async (req,res) =>{
+  
+}
