@@ -39,5 +39,15 @@ export const crearProducto = async (req, res) => {
 };
 
 export const obtenerProductoID = async (req,res) =>{
-  
+  try {
+    console.log(req.params.id);
+    const productoBuscado = await Producto.findById(req.params.id);
+    //si encontre el producto
+    res.status(200).json(productoBuscado);
+  } catch (error) {
+    console.log(error);
+    res.status(404).json({
+      mensaje: "No se encontro el producto solicitado"
+    })
+  }
 }
