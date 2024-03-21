@@ -4,6 +4,8 @@ export const listaProductos = async (req, res) => {
   try {
     // console.log("desde listar productos");
     // res.send("enviar lista de productos...");
+    //pedir a la bbdd la lista de la colecctions de productos
+    //el find() es una query de mongoose para traer todos los datos
     const productos = await Producto.find();
     res.status(200).json(productos);
   } catch (error) {
